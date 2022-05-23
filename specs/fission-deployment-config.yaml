@@ -4,4 +4,4 @@
 apiVersion: fission.io/v1
 kind: DeploymentConfig
 name: onboarding-get-update-enum-activity-type
-uid: 6310e1fe-974d-4a17-835c-db6c988943e8
+uid: ffbc9f44-6f9d-4a72-a302-076ee68f557b

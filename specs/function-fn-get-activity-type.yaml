@@ -1,35 +1,35 @@
 include:
 - ./func/*
 kind: ArchiveUploadSpec
-name: func-N54x
+name: func-5dQP
 
 ---
 apiVersion: fission.io/v1
 kind: Package
 metadata:
   creationTimestamp: null
-  name: fn-get-client-activity-0d04821c-5582-441e-8a52-488783cc3c01
+  name: fn-get-activity-type-12f718f3-0a93-46e6-abea-7c162d09ed09
   namespace: default
 spec:
   deployment:
     checksum: {}
   environment:
-    name: env-get-client-activity
+    name: env-get-activity-type
     namespace: default
   source:
     checksum: {}
     type: url
-    url: archive://func-N54x
+    url: archive://func-5dQP
 status:
   buildstatus: pending
-  lastUpdateTimestamp: "2022-05-20T19:17:28Z"
+  lastUpdateTimestamp: "2022-05-23T18:11:54Z"
 
 ---
 apiVersion: fission.io/v1
 kind: Function
 metadata:
   creationTimestamp: null
-  name: fn-get-client-activity
+  name: fn-get-activity-type
   namespace: default
 spec:
   InvokeStrategy:
@@ -42,14 +42,14 @@ spec:
     StrategyType: execution
   concurrency: 500
   environment:
-    name: env-get-client-activity
+    name: env-get-activity-type
     namespace: default
   functionTimeout: 60
   idletimeout: 120
   package:
     functionName: main.get_enums
     packageref:
-      name: fn-get-client-activity-0d04821c-5582-441e-8a52-488783cc3c01
+      name: fn-get-activity-type-12f718f3-0a93-46e6-abea-7c162d09ed09
       namespace: default
   requestsPerPod: 1
   resources: {}

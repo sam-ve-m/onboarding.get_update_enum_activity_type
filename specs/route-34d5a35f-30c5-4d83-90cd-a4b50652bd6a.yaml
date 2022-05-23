@@ -2,22 +2,22 @@ apiVersion: fission.io/v1
 kind: HTTPTrigger
 metadata:
   creationTimestamp: null
-  name: 558a56fc-7596-4542-a6c7-8c65754863e4
+  name: 34d5a35f-30c5-4d83-90cd-a4b50652bd6a
   namespace: default
 spec:
   createingress: false
   functionref:
     functionweights: null
-    name: fn-get-client-activity
+    name: fn-get-activity-type
     type: name
   host: ""
   ingressconfig:
     annotations: null
     host: '*'
-    path: /get_client_activity_type
+    path: /enum/activity_type
     tls: ""
   method: ""
   methods:
   - GET
   prefix: ""
-  relativeurl: /get_client_activity_type
+  relativeurl: /enum/activity_type
