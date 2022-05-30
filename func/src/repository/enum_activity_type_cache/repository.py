@@ -9,7 +9,7 @@ from src.core.interfaces.repository.enum_activity_type_cache.interface import (
 
 
 class EnumActivityTypeCacheRepository(IEnumActivityTypeCacheRepository):
-    enum_key = "jormungandr: EnumActivityType"
+    enum_key = "jormungandr:EnumActivityType"
 
     @classmethod
     def save_enum_activity_type(cls, enum_activity_type: list, time: int = 3600) -> bool:
