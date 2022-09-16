@@ -10,7 +10,6 @@ spec:
     image: nexus.sigame.com.br/fission-cx-builder-3.8:0.0.3
   imagepullsecret: "nexus-v3"
   keeparchive: false
-  poolsize: 3
   resources: {}
   runtime:
     image: nexus.sigame.com.br/fission-cx-env-3.8:0.0.3
@@ -39,4 +38,4 @@ spec:
         - name: LD_LIBRARY_PATH
           value: "/opt/instantclient"
 
-  version: 2
+  version: 3
