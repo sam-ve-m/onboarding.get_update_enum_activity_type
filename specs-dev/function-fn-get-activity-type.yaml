@@ -51,5 +51,5 @@ spec:
     packageref:
       name: fn-get-activity-type-7d292baa-698e-4cdd-a67c-1e767718e336
       namespace: default
-  requestsPerPod: 1
+  requestsPerPod: 10000
   resources: {}
