@@ -9,11 +9,11 @@ from src.repository.activity_type_enum.repository import ActivityTypeEnumReposit
 class ActivityTypeEnumService(IActivityTypeEnumService):
     @classmethod
     def get_response(cls):
-        service_response = []
-
         enums = ActivityTypeEnumRepository.get_activity_type_enum()
-        for code, value in enums:
-            service_response.append({"code": code, "value": value})
+        service_response = sorted((
+            {"code": code, "value": value}
+            for code, value in enums
+        ), key=lambda activity: activity["value"])
 
         service_response = ResponseModel.build_response(
             success=True, code=StatusCode.SUCCESS, message=None, result=service_response
