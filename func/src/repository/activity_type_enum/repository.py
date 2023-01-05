@@ -1,8 +1,8 @@
 from typing import List, Tuple
 
-from src.core.interfaces.repository.activity_type_enum.interface import IActivityTypeEnumRepository
-from src.repository.enum_activity_type_cache.repository import EnumActivityTypeCacheRepository
-from src.repository.base_repository.oracle.repository import OracleBaseRepository
+from func.src.core.interfaces.repository.activity_type_enum.interface import IActivityTypeEnumRepository
+from func.src.repository.enum_activity_type_cache.repository import EnumActivityTypeCacheRepository
+from func.src.repository.base_repository.oracle.repository import OracleBaseRepository
 
 
 class ActivityTypeEnumRepository(IActivityTypeEnumRepository):
