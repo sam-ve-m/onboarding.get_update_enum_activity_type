@@ -2,13 +2,13 @@ apiVersion: fission.io/v1
 kind: HTTPTrigger
 metadata:
   creationTimestamp: null
-  name: d6a28304-1569-4b6a-9ed3-9b3369ff5c33
+  name: onb-br-enum-activity-rt
   namespace: default
 spec:
   createingress: false
   functionref:
     functionweights: null
-    name: fn-get-activity-type
+    name: onb-br-enum-activity-fn
     type: name
   host: ""
   ingressconfig:
